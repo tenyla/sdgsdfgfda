@@ -1236,7 +1236,7 @@ local settingsOpen = false
 local pluginsOpen = false
 local UIClosed = false
 local Connected = false
-local UserInfoDisabled = false
+local UserInfoDisabled = true
 local UIToggle = Enum.KeyCode.RightShift
 
 function SetUserInfo()
