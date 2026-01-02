@@ -45,9 +45,9 @@ local loaded = false
 local syde = {
 
 	theme = {
-		['Accent'] = Color3.fromRGB(255, 255, 255);
-		['HitBox'] = Color3.fromRGB(255, 255, 255);
-		['DropShadow']   = Color3.fromRGB(0, 0, 0);
+		['Accent'] = Color3.fromRGB(35, 87, 180);
+		['HitBox'] = Color3.fromRGB(35, 87, 180);
+		['DropShadow']   = Color3.fromRGB(35, 87, 180);
 
 	};
 	Connections = {};
