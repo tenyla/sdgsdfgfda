@@ -3483,7 +3483,7 @@ function syde:Init(library)
 		element:Toggle({
 			Title = 'Anonymous',
 			Description = 'Hides your info in User Info.',
-			Value = UserInfoDisabled,
+			Value = true,
 			CallBack = function (v)
 				if v then
 					UserInfoDisabled = true
