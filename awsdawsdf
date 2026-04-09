@@ -6,7 +6,7 @@
 .d8888b. dP    dP .d888b88 .d8888b. 
 Y8ooooo. 88    88 88'  `88 88ooood8 
       88 88.  .88 88.  .88 88.  ... 
-`88888P' `8888P88 `88888P8 `88888P' beta.
+`88888P' `8888P88 `88888P8 `88888P' beta.z
               .88                   
           d8888P                    
 
@@ -45,9 +45,9 @@ local loaded = false
 local syde = {
 
 	theme = {
-		['Accent'] = Color3.fromRGB(35, 87, 180);
-		['HitBox'] = Color3.fromRGB(35, 87, 180);
-		['DropShadow']   = Color3.fromRGB(35, 87, 180);
+		['Accent'] = Color3.fromRGB(255, 255, 255);
+		['HitBox'] = Color3.fromRGB(255, 255, 255);
+		['DropShadow']   = Color3.fromRGB(0, 0, 0);
 
 	};
 	Connections = {};
@@ -1236,7 +1236,7 @@ local settingsOpen = false
 local pluginsOpen = false
 local UIClosed = false
 local Connected = false
-local UserInfoDisabled = true
+local UserInfoDisabled = false
 local UIToggle = Enum.KeyCode.RightShift
 
 function SetUserInfo()
@@ -3483,7 +3483,7 @@ function syde:Init(library)
 		element:Toggle({
 			Title = 'Anonymous',
 			Description = 'Hides your info in User Info.',
-			Value = true,
+			Value = UserInfoDisabled,
 			CallBack = function (v)
 				if v then
 					UserInfoDisabled = true
@@ -6258,5 +6258,4 @@ function syde:Init(library)
 
 end
 return syde
-
 
